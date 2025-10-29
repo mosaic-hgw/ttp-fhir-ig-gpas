@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="DeletePseudonyms"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition DeletePseudonyms</b></p><a name="DeletePseudonyms"> </a><a name="hcDeletePseudonyms"> </a><p>URL: [base]/$deletePseudonyms</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>target</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a><br/>(<a href="https://hl7.org/fhir/R4/search.html#string">string</a>)</td><td/><td><div><p>Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden.</p>
+</div></td></tr><tr><td>IN</td><td>original</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a><br/>(<a href="https://hl7.org/fhir/R4/search.html#string">string</a>)</td><td/><td><div><p>Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll.</p>
+</div></td></tr><tr><td>OUT</td><td>successStatus</td><td/><td>1..*</td><td/><td/><td><div><p>Status-Rückgabe der einzelnen durchgeführten Löschungen</p>
+</div></td></tr><tr><td>OUT</td><td>successStatus.target</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Target-Identifikator</p>
+</div></td></tr><tr><td>OUT</td><td>successStatus.original</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Original-Identifikator</p>
+</div></td></tr><tr><td>OUT</td><td>successStatus.result-code</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Erfolgs- bzw. Fehlercode</p>
+</div></td></tr></table><div><p>Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt.</p>
+</div></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms"/>
+  <version value="2025.1.0"/>
+  <name value="DeletePseudonyms"/>
+  <title value="deletePseudonyms"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <affectsState value="true"/>
+  <code value="deletePseudonyms"/>
+  <comment value="Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="target"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden."/>
+    <type value="string"/>
+    <searchType value="string"/>
+  </parameter>
+  <parameter>
+    <name value="original"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll."/>
+    <type value="string"/>
+    <searchType value="string"/>
+  </parameter>
+  <parameter>
+    <name value="successStatus"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Status-Rückgabe der einzelnen durchgeführten Löschungen"/>
+    <part>
+      <name value="target"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="Target-Identifikator"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="original"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Original-Identifikator"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="result-code"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Erfolgs- bzw. Fehlercode"/>
+      <type value="Coding"/>
+    </part>
+  </parameter>
+</OperationDefinition>

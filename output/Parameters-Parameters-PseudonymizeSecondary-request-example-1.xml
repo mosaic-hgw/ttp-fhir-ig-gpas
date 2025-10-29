@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-PseudonymizeSecondary-request-example-1"/>
+  <parameter>
+    <name value="original"/>
+    <part>
+      <name value="target"/>
+      <valueString value="Datensatz-Ebene"/>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueString value="H3RAU56A8E"/>
+    </part>
+    <part>
+      <name value="count"/>
+      <valueString value="2"/>
+    </part>
+  </parameter>
+</Parameters>

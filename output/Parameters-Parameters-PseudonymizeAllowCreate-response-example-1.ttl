@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gpas/Parameters/Parameters-PseudonymizeAllowCreate-response-example-1> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Parameters-PseudonymizeAllowCreate-response-example-1"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "pseudonym" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "target" ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MIRACUM" ]
+       ]
+     ] [
+       fhir:name [ fhir:v "original" ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1001000000022" ]
+       ]
+     ] [
+       fhir:name [ fhir:v "pseudonym" ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "mrcm_T0TYNV21" ]
+       ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "pseudonym" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "target" ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MIRACUM" ]
+       ]
+     ] [
+       fhir:name [ fhir:v "original" ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1001000000033" ]
+       ]
+     ] [
+       fhir:name [ fhir:v "pseudonym" ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "mrcm_9GELEUVU" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

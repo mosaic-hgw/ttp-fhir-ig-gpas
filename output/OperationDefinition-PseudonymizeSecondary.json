@@ -1,0 +1,123 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "PseudonymizeSecondary",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition PseudonymizeSecondary</b></p><a name=\"PseudonymizeSecondary\"> </a><a name=\"hcPseudonymizeSecondary\"> </a><p>URL: [base]/$pseudonymize-secondary</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>original</td><td/><td>1..*</td><td/><td/><td><div><p>Originalwerte</p>\n</div></td></tr><tr><td>IN</td><td>original.target</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.</p>\n</div></td></tr><tr><td>IN</td><td>original.value</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Original-Identifikator für den n Sekundärpseudonyme erzeugt werden sollen.</p>\n</div></td></tr><tr><td>IN</td><td>original.count</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Anzahl der zu erzeugenden Sekundärpseudonyme.</p>\n</div></td></tr><tr><td>OUT</td><td>secondarypseudonym</td><td/><td>1..*</td><td/><td/><td><div><p>erzeugte SekundärPersonenpseudonyme</p>\n</div></td></tr><tr><td>OUT</td><td>secondarypseudonym.target</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Pseudonymisierungskontext (Teil des Requests).</p>\n</div></td></tr><tr><td>OUT</td><td>secondarypseudonym.original</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Original-Identifikator (Teil des Requests).</p>\n</div></td></tr><tr><td>OUT</td><td>secondarypseudonym.value</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Sekundär-Pseudonym.</p>\n</div></td></tr><tr><td>OUT</td><td>secondarypseudonym.result-code</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Erfolgsstatus</p>\n</div></td></tr><tr><td>OUT</td><td>error</td><td/><td>0..*</td><td/><td/><td><div><p>Aufgetretene Fehler</p>\n</div></td></tr><tr><td>OUT</td><td>error.target</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Fehlerhafte Domänenangabe</p>\n</div></td></tr><tr><td>OUT</td><td>error.error-code</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Fehlerdetails</p>\n</div></td></tr></table><div><p>Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.</p>\n</div></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary",
+  "version" : "2025.1.0",
+  "name" : "PseudonymizeSecondary",
+  "title" : "pseudonymize-secondary",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.",
+  "affectsState" : true,
+  "code" : "pseudonymize-secondary",
+  "comment" : "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "original",
+    "use" : "in",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Originalwerte",
+    "part" : [{
+      "name" : "target",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.",
+      "type" : "string"
+    },
+    {
+      "name" : "value",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Original-Identifikator für den n Sekundärpseudonyme erzeugt werden sollen.",
+      "type" : "string"
+    },
+    {
+      "name" : "count",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Anzahl der zu erzeugenden Sekundärpseudonyme.",
+      "type" : "integer"
+    }]
+  },
+  {
+    "name" : "secondarypseudonym",
+    "use" : "out",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "erzeugte SekundärPersonenpseudonyme",
+    "part" : [{
+      "name" : "target",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Pseudonymisierungskontext (Teil des Requests).",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "original",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Original-Identifikator (Teil des Requests).",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "value",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Sekundär-Pseudonym.",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "result-code",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Erfolgsstatus",
+      "type" : "Coding"
+    }]
+  },
+  {
+    "name" : "error",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Aufgetretene Fehler",
+    "part" : [{
+      "name" : "target",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Fehlerhafte Domänenangabe",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "error-code",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Fehlerdetails",
+      "type" : "Coding"
+    }]
+  }]
+}

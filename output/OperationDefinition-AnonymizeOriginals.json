@@ -1,0 +1,79 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "AnonymizeOriginals",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AnonymizeOriginals</b></p><a name=\"AnonymizeOriginals\"> </a><a name=\"hcAnonymizeOriginals\"> </a><p>URL: [base]/$anonymizeOriginals</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>target</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"https://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td><div><p>Angabe der Domäne innerhalb derer für die angegebenen Originalwerte eine Anonymisierung durchgeführt werden soll.</p>\n</div></td></tr><tr><td>IN</td><td>original</td><td/><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"https://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td><div><p>Angabe der Originalwerte für die in der angegebenen Domäne eine Anonymisierung durchgeführt werden soll.</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus</td><td/><td>1..*</td><td/><td/><td><div><p>Status-Rückgabe der einzelnen durchgeführten Anonymisierungen</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus.target</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Target-Identifikator</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus.original</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Original-Identifikator</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus.result-code</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Erfolgs- bzw. Fehlercode</p>\n</div></td></tr></table><div><p>Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht.</p>\n</div></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals",
+  "version" : "2025.1.0",
+  "name" : "AnonymizeOriginals",
+  "title" : "anonymizeOriginals",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht.",
+  "affectsState" : true,
+  "code" : "anonymizeOriginals",
+  "comment" : "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "target",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Domäne innerhalb derer für die angegebenen Originalwerte eine Anonymisierung durchgeführt werden soll.",
+    "type" : "string",
+    "searchType" : "string"
+  },
+  {
+    "name" : "original",
+    "use" : "in",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Angabe der Originalwerte für die in der angegebenen Domäne eine Anonymisierung durchgeführt werden soll.",
+    "type" : "string",
+    "searchType" : "string"
+  },
+  {
+    "name" : "successStatus",
+    "use" : "out",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Status-Rückgabe der einzelnen durchgeführten Anonymisierungen",
+    "part" : [{
+      "name" : "target",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Target-Identifikator",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "original",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Original-Identifikator",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "result-code",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Erfolgs- bzw. Fehlercode",
+      "type" : "Coding"
+    }]
+  }]
+}

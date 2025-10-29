@@ -1,0 +1,117 @@
+# insertValuePseudonymPairs - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "InsertValuePseudonymPairs",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs",
+  "version" : "2025.1.0",
+  "name" : "InsertValuePseudonymPairs",
+  "title" : "insertValuePseudonymPairs",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen",
+  "affectsState" : true,
+  "code" : "insertValuePseudonymPairs",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [
+    {
+      "name" : "pseudonym",
+      "use" : "in",
+      "min" : 1,
+      "max" : "*",
+      "documentation" : "Tripel mit den Angaben zu Original und zu setzendem Pseudonym.",
+      "part" : [
+        {
+          "name" : "target",
+          "use" : "in",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Angabe der Domäne, in welche das Wertepaare Original-Wert & Pseudonym eingefügt werden soll. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.",
+          "type" : "string",
+          "searchType" : "string"
+        },
+        {
+          "name" : "original",
+          "use" : "in",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Angabe des Originalwertes des Werte-Paares",
+          "type" : "string",
+          "searchType" : "string"
+        },
+        {
+          "name" : "value",
+          "use" : "in",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Angabe des Pseudonyms des Werte-Paares. Das Pseudonym muss den konfigurierten Vorgaben der Zieldomäne entsprechend und wird im Regelfall vor dem Einfügen durch den gPAS validiert.",
+          "type" : "string",
+          "searchType" : "string"
+        }
+      ]
+    },
+    {
+      "name" : "successStatus",
+      "use" : "out",
+      "min" : 0,
+      "max" : "*",
+      "documentation" : "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym",
+      "part" : [
+        {
+          "name" : "original",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Original-Identifikator",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "target",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Target-Identifikator",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "value",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Pseudonym",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "result-code",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Erfolgsstatus",
+          "type" : "Coding"
+        }
+      ]
+    }
+  ]
+}
+
+```

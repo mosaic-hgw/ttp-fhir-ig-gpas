@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gpas/OperationDefinition/DeletePseudonyms> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeletePseudonyms"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition DeletePseudonyms</b></p><a name=\"DeletePseudonyms\"> </a><a name=\"hcDeletePseudonyms\"> </a><p>URL: [base]/$deletePseudonyms</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>target</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"https://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td><div><p>Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden.</p>\n</div></td></tr><tr><td>IN</td><td>original</td><td/><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"https://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td><div><p>Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll.</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus</td><td/><td>1..*</td><td/><td/><td><div><p>Status-Rückgabe der einzelnen durchgeführten Löschungen</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus.target</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Target-Identifikator</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus.original</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Original-Identifikator</p>\n</div></td></tr><tr><td>OUT</td><td>successStatus.result-code</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Erfolgs- bzw. Fehlercode</p>\n</div></td></tr></table><div><p>Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt.</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2025.1.0"] ; # 
+  fhir:name [ fhir:v "DeletePseudonyms"] ; # 
+  fhir:title [ fhir:v "deletePseudonyms"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
+     ] )
+  ] ) ; # 
+  fhir:affectsState [ fhir:v true] ; # 
+  fhir:code [ fhir:v "deletePseudonyms"] ; # 
+  fhir:comment [ fhir:v "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."] ; # 
+  fhir:system [ fhir:v true] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v false] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "target" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden." ] ;
+     fhir:type [ fhir:v "string" ] ;
+     fhir:searchType [ fhir:v "string" ]
+  ] [
+     fhir:name [ fhir:v "original" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll." ] ;
+     fhir:type [ fhir:v "string" ] ;
+     fhir:searchType [ fhir:v "string" ]
+  ] [
+     fhir:name [ fhir:v "successStatus" ] ;
+     fhir:use [ fhir:v "out" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Status-Rückgabe der einzelnen durchgeführten Löschungen" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "target" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 0 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "Target-Identifikator" ] ;
+       fhir:type [ fhir:v "Identifier" ]
+     ] [
+       fhir:name [ fhir:v "original" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 1 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "Original-Identifikator" ] ;
+       fhir:type [ fhir:v "Identifier" ]
+     ] [
+       fhir:name [ fhir:v "result-code" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 1 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "Erfolgs- bzw. Fehlercode" ] ;
+       fhir:type [ fhir:v "Coding" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,26 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-PseudonymizeSecondary-response-example-2",
+  "parameter": [
+    {
+      "part": [
+        {
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "DOMAINXY"
+          },
+          "name": "target"
+        },
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/issue-type",
+            "code": "not-found",
+            "display": "Not Found"
+          },
+          "name": "error-code"
+        }
+      ],
+      "name": "error"
+    }
+  ]
+}

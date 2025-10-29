@@ -1,0 +1,140 @@
+# pseudonymize-secondary - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "PseudonymizeSecondary",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary",
+  "version" : "2025.1.0",
+  "name" : "PseudonymizeSecondary",
+  "title" : "pseudonymize-secondary",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.",
+  "affectsState" : true,
+  "code" : "pseudonymize-secondary",
+  "comment" : "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [
+    {
+      "name" : "original",
+      "use" : "in",
+      "min" : 1,
+      "max" : "*",
+      "documentation" : "Originalwerte",
+      "part" : [
+        {
+          "name" : "target",
+          "use" : "in",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.",
+          "type" : "string"
+        },
+        {
+          "name" : "value",
+          "use" : "in",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Original-Identifikator für den n Sekundärpseudonyme erzeugt werden sollen.",
+          "type" : "string"
+        },
+        {
+          "name" : "count",
+          "use" : "in",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Anzahl der zu erzeugenden Sekundärpseudonyme.",
+          "type" : "integer"
+        }
+      ]
+    },
+    {
+      "name" : "secondarypseudonym",
+      "use" : "out",
+      "min" : 1,
+      "max" : "*",
+      "documentation" : "erzeugte SekundärPersonenpseudonyme",
+      "part" : [
+        {
+          "name" : "target",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Pseudonymisierungskontext (Teil des Requests).",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "original",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Original-Identifikator (Teil des Requests).",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "value",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Sekundär-Pseudonym.",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "result-code",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Erfolgsstatus",
+          "type" : "Coding"
+        }
+      ]
+    },
+    {
+      "name" : "error",
+      "use" : "out",
+      "min" : 0,
+      "max" : "*",
+      "documentation" : "Aufgetretene Fehler",
+      "part" : [
+        {
+          "name" : "target",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Fehlerhafte Domänenangabe",
+          "type" : "Identifier"
+        },
+        {
+          "name" : "error-code",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Fehlerdetails",
+          "type" : "Coding"
+        }
+      ]
+    }
+  ]
+}
+
+```

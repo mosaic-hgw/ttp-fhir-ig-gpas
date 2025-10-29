@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="Pseudonymize"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition Pseudonymize</b></p><a name="Pseudonymize"> </a><a name="hcPseudonymize"> </a><p>URL: [base]/$pseudonymize</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>target</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a><br/>(<a href="https://hl7.org/fhir/R4/search.html#string">string</a>)</td><td/><td><div><p>Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird</p>
+</div></td></tr><tr><td>IN</td><td>original</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a><br/>(<a href="https://hl7.org/fhir/R4/search.html#string">string</a>)</td><td/><td><div><p>Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird</p>
+</div></td></tr><tr><td>OUT</td><td>pseudonym</td><td/><td>0..*</td><td/><td/><td><div><p>Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym</p>
+</div></td></tr><tr><td>OUT</td><td>pseudonym.original</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Original-Identifikator</p>
+</div></td></tr><tr><td>OUT</td><td>pseudonym.target</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Target-Identifikator</p>
+</div></td></tr><tr><td>OUT</td><td>pseudonym.pseudonym</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Pseudonym</p>
+</div></td></tr><tr><td>OUT</td><td>error</td><td/><td>0..*</td><td/><td/><td><div><p>Fehlerrückgabe bei Teil-Fehlern</p>
+</div></td></tr><tr><td>OUT</td><td>error.target</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Target-Identifikator</p>
+</div></td></tr><tr><td>OUT</td><td>error.original</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Original-Identifikator</p>
+</div></td></tr><tr><td>OUT</td><td>error.error-code</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Fehlercode</p>
+</div></td></tr></table><div><p>Abfrage je eines Pseudonym-Wertes für eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne.</p>
+</div></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize"/>
+  <version value="2025.1.0"/>
+  <name value="Pseudonymize"/>
+  <title value="pseudonymize"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Abfrage je eines Pseudonym-Wertes für eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."/>
+  <affectsState value="false"/>
+  <code value="pseudonymize"/>
+  <comment value="Abfrage je eines Pseudonym-Wertes für eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="target"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird"/>
+    <type value="string"/>
+    <searchType value="string"/>
+  </parameter>
+  <parameter>
+    <name value="original"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird"/>
+    <type value="string"/>
+    <searchType value="string"/>
+  </parameter>
+  <parameter>
+    <name value="pseudonym"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym"/>
+    <part>
+      <name value="original"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Original-Identifikator"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="target"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Target-Identifikator"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="pseudonym"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Pseudonym"/>
+      <type value="Identifier"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="error"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Fehlerrückgabe bei Teil-Fehlern"/>
+    <part>
+      <name value="target"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="Target-Identifikator"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="original"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="Original-Identifikator"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="error-code"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Fehlercode"/>
+      <type value="Coding"/>
+    </part>
+  </parameter>
+</OperationDefinition>

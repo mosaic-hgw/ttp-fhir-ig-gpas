@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-PseudonymizeSecondary-response-example-2"/>
+  <parameter>
+    <name value="error"/>
+    <part>
+      <name value="target"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="DOMAINXY"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="error-code"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/issue-type"/>
+        <code value="not-found"/>
+        <display value="Not Found"/>
+      </valueCoding>
+    </part>
+  </parameter>
+</Parameters>

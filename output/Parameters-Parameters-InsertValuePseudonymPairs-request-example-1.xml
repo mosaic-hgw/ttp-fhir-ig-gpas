@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-InsertValuePseudonymPairs-request-example-1"/>
+  <parameter>
+    <name value="pseudonym"/>
+    <part>
+      <name value="target"/>
+      <valueString value="MIRACUM"/>
+    </part>
+    <part>
+      <name value="original"/>
+      <valueString value="1001000000022"/>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueString value="mrcm_T0TYNV21"/>
+    </part>
+  </parameter>
+</Parameters>

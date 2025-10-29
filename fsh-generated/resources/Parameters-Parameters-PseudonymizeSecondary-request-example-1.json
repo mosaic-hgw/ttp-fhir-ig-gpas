@@ -1,0 +1,23 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-PseudonymizeSecondary-request-example-1",
+  "parameter": [
+    {
+      "part": [
+        {
+          "name": "target",
+          "valueString": "Datensatz-Ebene"
+        },
+        {
+          "name": "value",
+          "valueString": "H3RAU56A8E"
+        },
+        {
+          "name": "count",
+          "valueString": "2"
+        }
+      ],
+      "name": "original"
+    }
+  ]
+}
