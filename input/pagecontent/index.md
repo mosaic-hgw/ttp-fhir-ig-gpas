@@ -1,6 +1,16 @@
-# IG TTP-FHIR Gateway
+# FHIR-Support für Pseudonymmanagement
 
-Stand 12.06.2025
+Stand 12.11.2025
+          
+### Endpunkt
+
+Der FHIR-Endpunkt (```base```) für das Pseudonymmanagement ist
+
+<strong>```http[s]://\<host\>:\<port\>/ttp-fhir/fhir/gpas```</strong>
+
+<p align="center">
+  <img width="500" style="float: none;" src="assets/images/fhirgw-gpas.png">
+</p>
 
 ### Implementierung
 

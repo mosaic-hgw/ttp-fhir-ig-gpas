@@ -13,7 +13,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="AnonymizeOriginals"/>
   <title value="anonymizeOriginals"/>
   <status value="active"/>

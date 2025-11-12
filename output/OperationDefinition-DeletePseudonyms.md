@@ -1,4 +1,4 @@
-# deletePseudonyms - v2025.1.0
+# deletePseudonyms - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "DeletePseudonyms",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "DeletePseudonyms",
   "title" : "deletePseudonyms",
   "status" : "active",

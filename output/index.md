@@ -1,4 +1,4 @@
-# Home - v2025.1.0
+# Implementation Guide gPAS - v2025.2.0
 
 
 
@@ -9,10 +9,10 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ths-greifswald.ttp-fhir-gw.gpas",
   "url" : "https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewaygPAS",
   "status" : "active",
-  "date" : "2025-10-29T12:19:25+01:00",
+  "date" : "2025-11-12T11:49:28+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
@@ -1540,66 +1540,22 @@
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Beschreibung.html"
-            }
-          ],
-          "nameUrl" : "Beschreibung.html",
-          "title" : "Beschreibung",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
               "valueUrl" : "index.html"
             }
           ],
           "nameUrl" : "index.html",
-          "title" : "Home",
+          "title" : "Implementation Guide gPAS",
           "generation" : "markdown"
         },
         {
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "KontextUndKonzept.html"
+              "valueUrl" : "Allgemein.html"
             }
           ],
-          "nameUrl" : "KontextUndKonzept.html",
-          "title" : "Kontext und Konzept",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Pseudonymmanagement.html"
-            }
-          ],
-          "nameUrl" : "Pseudonymmanagement.html",
-          "title" : "Pseudonymmanagement",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "TechnischeGrundlagen.html"
-            }
-          ],
-          "nameUrl" : "TechnischeGrundlagen.html",
-          "title" : "Technische Grundlagen",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Vorgehen.html"
-            }
-          ],
-          "nameUrl" : "Vorgehen.html",
-          "title" : "Vorgehen",
+          "nameUrl" : "Allgemein.html",
+          "title" : "Allgemein",
           "generation" : "markdown"
         }
       ]

@@ -18,7 +18,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="DePseudonymize"/>
   <title value="dePseudonymize"/>
   <status value="active"/>

@@ -14,19 +14,19 @@
      fhir:part ( [
        fhir:name [ fhir:v "target" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "Datensatz-Ebene"
        ]
      ] [
        fhir:name [ fhir:v "value" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "H3RAU56A8E"
        ]
      ] [
        fhir:name [ fhir:v "count" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "2"
        ]
      ] )

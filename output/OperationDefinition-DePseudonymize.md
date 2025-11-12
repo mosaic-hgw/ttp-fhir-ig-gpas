@@ -1,4 +1,4 @@
-# dePseudonymize - v2025.1.0
+# dePseudonymize - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "DePseudonymize",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "DePseudonymize",
   "title" : "dePseudonymize",
   "status" : "active",

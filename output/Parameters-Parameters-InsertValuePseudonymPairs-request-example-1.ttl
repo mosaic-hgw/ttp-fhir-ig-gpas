@@ -14,19 +14,19 @@
      fhir:part ( [
        fhir:name [ fhir:v "target" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "MIRACUM"
        ]
      ] [
        fhir:name [ fhir:v "original" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "1001000000022"
        ]
      ] [
        fhir:name [ fhir:v "value" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "mrcm_T0TYNV21"
        ]
      ] )

@@ -1,14 +1,10 @@
-# ths-greifswald.ttp-fhir-gw.gpas#2025.1.0: null
+# ths-greifswald.ttp-fhir-gw.gpas#2025.2.0: null
 
 ## Pages
 
-* [Home](index.md)
-* [Beschreibung](Beschreibung.md)
-* [Kontext und Konzept](KontextUndKonzept.md)
-* [Pseudonymmanagement](Pseudonymmanagement.md)
+* [Implementation Guide gPAS](index.md)
+* [Allgemein](Allgemein.md)
 * [Artifacts Summary](artifacts.md)
-* [Vorgehen](Vorgehen.md)
-* [Technische Grundlagen](TechnischeGrundlagen.md)
 
 ## Resources
 

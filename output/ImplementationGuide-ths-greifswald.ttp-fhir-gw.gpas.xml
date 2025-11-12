@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gpas</b></p><a name="ths-greifswald.ttp-fhir-gw.gpas"> </a><a name="hcths-greifswald.ttp-fhir-gw.gpas"> </a><h2>IGTTPFHIRGatewaygPAS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas</pre></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="IGTTPFHIRGatewaygPAS"/>
   <status value="active"/>
-  <date value="2025-10-29T12:19:25+01:00"/>
+  <date value="2025-11-12T11:49:28+01:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -1079,50 +1079,18 @@
       <generation value="html"/>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Beschreibung.html"/>
-        </extension>
-        <nameUrl value="Beschreibung.html"/>
-        <title value="Beschreibung"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
+        <title value="Implementation Guide gPAS"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="KontextUndKonzept.html"/>
+          <valueUrl value="Allgemein.html"/>
         </extension>
-        <nameUrl value="KontextUndKonzept.html"/>
-        <title value="Kontext und Konzept"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Pseudonymmanagement.html"/>
-        </extension>
-        <nameUrl value="Pseudonymmanagement.html"/>
-        <title value="Pseudonymmanagement"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="TechnischeGrundlagen.html"/>
-        </extension>
-        <nameUrl value="TechnischeGrundlagen.html"/>
-        <title value="Technische Grundlagen"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Vorgehen.html"/>
-        </extension>
-        <nameUrl value="Vorgehen.html"/>
-        <title value="Vorgehen"/>
+        <nameUrl value="Allgemein.html"/>
+        <title value="Allgemein"/>
         <generation value="markdown"/>
       </page>
     </page>

@@ -15,28 +15,40 @@
        fhir:name [ fhir:v "target" ] ;
        fhir:value [
          a fhir:Identifier ;
-         fhir:system [ fhir:v "https://sample/psn-system"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://sample/psn-system"^^xsd:anyURI ;
+           fhir:l <https://sample/psn-system>
+         ] ;
          fhir:value [ fhir:v "Datensatz-Ebene" ]
        ]
      ] [
        fhir:name [ fhir:v "original" ] ;
        fhir:value [
          a fhir:Identifier ;
-         fhir:system [ fhir:v "https://sample/psn-system"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://sample/psn-system"^^xsd:anyURI ;
+           fhir:l <https://sample/psn-system>
+         ] ;
          fhir:value [ fhir:v "H3RAU56A8E" ]
        ]
      ] [
        fhir:name [ fhir:v "value" ] ;
        fhir:value [
          a fhir:Identifier ;
-         fhir:system [ fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://ths-greifswald.de/gpas"^^xsd:anyURI ;
+           fhir:l <https://ths-greifswald.de/gpas>
+         ] ;
          fhir:value [ fhir:v "53KUNDA3RP5N1" ]
        ]
      ] [
        fhir:name [ fhir:v "result-code" ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/operation-outcome"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/operation-outcome"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/operation-outcome>
+         ] ;
          fhir:code [ fhir:v "MSG_CREATED" ]
        ]
      ] )
@@ -46,28 +58,40 @@
        fhir:name [ fhir:v "target" ] ;
        fhir:value [
          a fhir:Identifier ;
-         fhir:system [ fhir:v "https://sample/psn-system"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://sample/psn-system"^^xsd:anyURI ;
+           fhir:l <https://sample/psn-system>
+         ] ;
          fhir:value [ fhir:v "Datensatz-Ebene" ]
        ]
      ] [
        fhir:name [ fhir:v "original" ] ;
        fhir:value [
          a fhir:Identifier ;
-         fhir:system [ fhir:v "https://sample/psn-system"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://sample/psn-system"^^xsd:anyURI ;
+           fhir:l <https://sample/psn-system>
+         ] ;
          fhir:value [ fhir:v "H3RAU56A8E" ]
        ]
      ] [
        fhir:name [ fhir:v "value" ] ;
        fhir:value [
          a fhir:Identifier ;
-         fhir:system [ fhir:v "https://sample/psn-system"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://sample/psn-system"^^xsd:anyURI ;
+           fhir:l <https://sample/psn-system>
+         ] ;
          fhir:value [ fhir:v "53KUNDA3RP5N2" ]
        ]
      ] [
        fhir:name [ fhir:v "result-code" ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/operation-outcome"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/operation-outcome"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/operation-outcome>
+         ] ;
          fhir:code [ fhir:v "MSG_CREATED" ]
        ]
      ] )

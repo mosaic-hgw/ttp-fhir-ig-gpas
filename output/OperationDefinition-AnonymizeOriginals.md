@@ -1,4 +1,4 @@
-# anonymizeOriginals - v2025.1.0
+# anonymizeOriginals - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "AnonymizeOriginals",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "AnonymizeOriginals",
   "title" : "anonymizeOriginals",
   "status" : "active",

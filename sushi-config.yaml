@@ -9,7 +9,7 @@ name: IG TTP-FHIR Gateway gPAS
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
-version: 2025.1.0
+version: 2025.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -37,14 +37,9 @@ dependencies:
 # sub-pages.
 #
 pages:
-  Beschreibung.md:
   index.md:
-    title: Home
-  KontextUndKonzept.md:
-    title: Kontext und Konzept
-  Pseudonymmanagement.md:
-  TechnischeGrundlagen.md:
-  Vorgehen.md:
+    title: Implementation Guide gPAS
+  Allgemein.md:
   ### automatisch generierte Pages müssen hier nicht gelistet werden
 
 
@@ -74,15 +69,11 @@ pages:
 menu:
   ##### Home ###################################################################
   Home: index.html
-  ##### Allgemeines ############################################################
-  Allgemeines:
-    Beschreibung: Beschreibung.html
-    Kontext und Konzept: KontextUndKonzept.html
-    Technische Grundlagen: TechnischeGrundlagen.html
-    Pseudonymmanagement: Pseudonymmanagement.html
+  ##### Allgemein ################################################################
+  Allgemein: Allgemein.html
   ##### Operationen ############################################################
   Operationen:
-    PseudonymizeAllowCreate: OperationDefinition-PseudonymizeAllowCreate.html
+    pseudonymizeAllowCreate: OperationDefinition-PseudonymizeAllowCreate.html
     pseudonymize: OperationDefinition-Pseudonymize.html
     pseudonymizeSecondary: OperationDefinition-PseudonymizeSecondary.html
     insertValuePseudonymPairs: OperationDefinition-InsertValuePseudonymPairs.html

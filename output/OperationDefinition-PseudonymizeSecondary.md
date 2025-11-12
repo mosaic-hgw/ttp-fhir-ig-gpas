@@ -1,4 +1,4 @@
-# pseudonymize-secondary - v2025.1.0
+# pseudonymize-secondary - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "PseudonymizeSecondary",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "PseudonymizeSecondary",
   "title" : "pseudonymize-secondary",
   "status" : "active",

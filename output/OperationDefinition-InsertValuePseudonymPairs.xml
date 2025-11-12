@@ -15,7 +15,7 @@
 </div></td></tr></table></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="InsertValuePseudonymPairs"/>
   <title value="insertValuePseudonymPairs"/>
   <status value="active"/>
