@@ -12,7 +12,7 @@
   "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewaygPAS",
   "status" : "active",
-  "date" : "2025-11-25T13:39:27+01:00",
+  "date" : "2025-11-25T14:17:51+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
