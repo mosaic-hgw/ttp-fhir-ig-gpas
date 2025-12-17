@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-PseudonymizeSecondary-response-example-1"/>
+  <parameter>
+    <name value="secondarypseudonym"/>
+    <part>
+      <name value="target"/>
+      <valueIdentifier>
+        <system value="https://sample/psn-system"/>
+        <value value="Datensatz-Ebene"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="original"/>
+      <valueIdentifier>
+        <system value="https://sample/psn-system"/>
+        <value value="H3RAU56A8E"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="53KUNDA3RP5N1"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="result-code"/>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/operation-outcome"/>
+        <code value="MSG_CREATED"/>
+      </valueCoding>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="secondarypseudonym"/>
+    <part>
+      <name value="target"/>
+      <valueIdentifier>
+        <system value="https://sample/psn-system"/>
+        <value value="Datensatz-Ebene"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="original"/>
+      <valueIdentifier>
+        <system value="https://sample/psn-system"/>
+        <value value="H3RAU56A8E"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueIdentifier>
+        <system value="https://sample/psn-system"/>
+        <value value="53KUNDA3RP5N2"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="result-code"/>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/operation-outcome"/>
+        <code value="MSG_CREATED"/>
+      </valueCoding>
+    </part>
+  </parameter>
+</Parameters>

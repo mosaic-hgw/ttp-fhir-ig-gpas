@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-InsertValuePseudonymPairs-response-example-1"/>
+  <parameter>
+    <name value="successStatus"/>
+    <part>
+      <name value="target"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="MIRACUM"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="original"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="1001000000022"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="mrcm_T0TYNV21"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="result-code"/>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/operation-outcome"/>
+        <code value="MSG_CREATED"/>
+      </valueCoding>
+    </part>
+  </parameter>
+</Parameters>

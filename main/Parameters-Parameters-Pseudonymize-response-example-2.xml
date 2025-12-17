@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-Pseudonymize-response-example-2"/>
+  <parameter>
+    <name value="pseudonym"/>
+    <part>
+      <name value="target"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="MIRACUM"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="original"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="1001000000022"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="pseudonym"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="mrcm_T0TYNV21"/>
+      </valueIdentifier>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="error"/>
+    <part>
+      <name value="original"/>
+      <valueIdentifier>
+        <system value="https://ths-greifswald.de/gpas"/>
+        <value value="10010000000XX"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="error-code"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/issue-type"/>
+        <code value="not-found"/>
+        <display value="Not Found"/>
+      </valueCoding>
+    </part>
+  </parameter>
+</Parameters>
