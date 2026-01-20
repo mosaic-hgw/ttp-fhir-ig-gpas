@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for IGTTPFHIRGatewaygPAS</h1>
- <p>Generated Tue Jan 20 08:23:26 UTC 2026, FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2025.2.0 (canonical = <a href="https://ths-greifswald.de/fhir/gpas">https://ths-greifswald.de/fhir/gpas</a> (<a href="https://ths-greifswald.de/fhir/gpas/history.html">history</a>))</p>
+ <p>Generated Tue Jan 20 10:31:04 UTC 2026, FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2025.2.0 (canonical = <a href="https://ths-greifswald.de/fhir/gpas">https://ths-greifswald.de/fhir/gpas</a> (<a href="https://ths-greifswald.de/fhir/gpas/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -139,11 +139,11 @@
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
     <td>https://tx.fhir.org/r4</td>
     <td></td>
     <td>https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction</td>
-    <td>auth = , candidates=</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -193,6 +193,25 @@
     <td>https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyPurpose|2025.2.0</td>
     <td>https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose</td>
     <td>auth = , candidates=</td>
+  </tr>
+</table>
+<p>
+  <b>Errors</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>URL</b>
+    </td>
+    <td>
+      <b>Message</b>
+    </td>
+  </tr>
+  <tr>
+    <td>https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=https%3A%2F%2Fths-greifswald.de%2Ffhir%2FCodeSystem%2FConsentPolicyAction&amp;usage=publication">Error resolving system https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction: Connect timed out</span>
+    </td>
   </tr>
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
