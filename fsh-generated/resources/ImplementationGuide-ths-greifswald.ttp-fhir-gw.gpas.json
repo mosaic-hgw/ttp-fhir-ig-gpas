@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "ths-greifswald.ttp-fhir-gw.gpas",
   "url": "https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas",
-  "version": "2025.1.0",
+  "version": "2025.2.0",
   "name": "IGTTPFHIRGatewaygPAS",
   "status": "active",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -476,33 +476,13 @@
       "generation": "html",
       "page": [
         {
-          "nameUrl": "Beschreibung.html",
-          "title": "Beschreibung",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "index.html",
-          "title": "Home",
+          "title": "Implementation Guide gPAS",
           "generation": "markdown"
         },
         {
-          "nameUrl": "KontextUndKonzept.html",
-          "title": "Kontext und Konzept",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Pseudonymmanagement.html",
-          "title": "Pseudonymmanagement",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "TechnischeGrundlagen.html",
-          "title": "Technische Grundlagen",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Vorgehen.html",
-          "title": "Vorgehen",
+          "nameUrl": "Allgemein.html",
+          "title": "Allgemein",
           "generation": "markdown"
         }
       ]
