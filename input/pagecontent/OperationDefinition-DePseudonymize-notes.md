@@ -1,4 +1,4 @@
-#### Aufruf und Rückgabe
+### Aufruf und Rückgabe
 
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
@@ -19,8 +19,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
 
-
-#### Beispiel
+### Beispiel
 
 * [Request-Body](Parameters-Parameters-DePseudonymize-request-example-1.html)
 * [Rückmeldung](Parameters-Parameters-DePseudonymize-response-example-1.html)

@@ -1,4 +1,4 @@
-# FHIR-Support für gPAS
+# FHIR-Support für Pseudonymmanagement
 
 Stand 05.02.2026
 
