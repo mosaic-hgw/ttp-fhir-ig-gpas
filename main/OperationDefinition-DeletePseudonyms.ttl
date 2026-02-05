@@ -31,6 +31,7 @@
        fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."] ; # 
   fhir:affectsState [ fhir:v true] ; # 
   fhir:code [ fhir:v "deletePseudonyms"] ; # 
   fhir:comment [ fhir:v "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."] ; # 
