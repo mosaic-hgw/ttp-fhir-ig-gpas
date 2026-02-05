@@ -2,8 +2,8 @@ IGTTPFHIRGatewaygPAS : Validation Results
 =========================================
 
 err = 90, warn = 164, info = 74
-IG Publisher Version: 2.0.29
-Generated Tue Jan 20 10:31:04 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2025.2.0 (canonical = https://ths-greifswald.de/fhir/gpas)
+IG Publisher Version: 2.1.0
+Generated Thu Feb 05 13:31:57 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2025.2.0 (canonical = https://ths-greifswald.de/fhir/gpas)
  Build Errors : 0 / 46 / 0
  /workspace/fsh-generated/resources/CodeSystem-BloomfilterTypeCS : 2 / 1 / 1
  /workspace/fsh-generated/resources/CodeSystem-ConsentComponentTypeCS : 2 / 1 / 1
