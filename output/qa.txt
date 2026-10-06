@@ -3,7 +3,7 @@ IGTTPFHIRGatewaygPAS : Validation Results
 
 err = 14, warn = 67, info = 0
 IG Publisher Version: 2.0.26 Out of date - current version is 2.3.4
-Generated Tue Oct 06 15:54:50 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2026.2.0 (canonical = https://ths-greifswald.de/fhir/gpas)
+Generated Tue Oct 06 16:27:03 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2026.2.0 (canonical = https://ths-greifswald.de/fhir/gpas)
  Build Errors : 0 / 22 / 0
  C:\Daten\Entwicklung\ttp-fhir-ig-gpas\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.gpas : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-gpas\fsh-generated\resources\OperationDefinition-AnonymizeOriginals : 2 / 0 / 1

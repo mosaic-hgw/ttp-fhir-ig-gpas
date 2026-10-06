@@ -20,7 +20,7 @@ Der bisherige FHIR-Endpunkt des gPAS bleibt parallel unverändert bestehen. Der 
 <strong>```http[s]://\<host\>:\<port\>/ttp-fhir/fhir/gpas/v2```</strong>
 
 <p align="center">
-  <img width="500" style="float: none;" src="assets/images/gpas_2026.2.0_container_architecture.png">
+  <img width="700" style="float: none;" src="assets/images/gpas-architecture.png">
 </p>
 
 Der zusätzliche Endpunkt kann individuell per Konfiguration aktiviert/deaktiviert werden (Datei `ttp_fhir.env`; Variable `TTP_FHIR_GPAS_GENERIC_ENDPOINT_ENABLED` mit Default `TRUE`).
@@ -28,16 +28,18 @@ Der zusätzliche Endpunkt kann individuell per Konfiguration aktiviert/deaktivie
 ### Übersicht der Funktionalitäten
 
 Es werden alle im IG für die Schnittstelle zur Pseudonymisierung in der MII spezifizierten FHIR Operations
-unterstützt (Stand vom 01. Oktober 2026). Details dazu im [offiziellen IG des MII PSN Interfaces](http://www.hl7.org/fhir/http.html](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/Funktionen.html).
+unterstützt (Stand vom 01. Oktober 2026). 
 
-| Operation              | 	Link zur Spezifikation |
-|------------------------|------------------------|
-| **$pseudonymize**        | 	[Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-Pseudonymize.html)|
-| **$pseudonymize-multiple** | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-PseudonymizeMultiple.html)|
-| **$get-pseudonym**         | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-GetPseudonym.html)|
-| **$de-pseudonymize**       | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-DePseudonymize.html)|
-| **$delete-pseudonym**      | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-DeletePseudonym.html)|
-| **$anonymize-original**    | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-AnonymizeOriginal.html)|
+Details dazu im offiziellen IG zum [MII PSN Interface](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/Funktionen.html).
+
+| Operation         | 	Link zur Spezifikation |
+|-------------------|------------------------|
+| *$pseudonymize*   | 	[Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-Pseudonymize.html)|
+| *$pseudonymize-multiple* | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-PseudonymizeMultiple.html)|
+| *$get-pseudonym*  | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-GetPseudonym.html)|
+| *$de-pseudonymize* | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-DePseudonymize.html)|
+| *$delete-pseudonym* | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-DeletePseudonym.html)|
+| *$anonymize-original* | [Details](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-AnonymizeOriginal.html)|
 
 ### Besonderheiten der gPAS MII Implementierung
 
