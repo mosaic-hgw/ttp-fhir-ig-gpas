@@ -1,2 +1,2 @@
-# Artifacts Summary - v2025.2.0
+# Artifacts Summary - v2026.2.0
 

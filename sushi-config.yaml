@@ -9,7 +9,7 @@ name: IG TTP-FHIR Gateway gPAS
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
-version: 2025.2.0
+version: 2026.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -40,6 +40,8 @@ pages:
   index.md:
     title: Implementation Guide gPAS
   Allgemein.md:
+  Mitgeltend.md:
+    title: Mitgeltende Hinweise
   ### automatisch generierte Pages müssen hier nicht gelistet werden
 
 
@@ -80,6 +82,8 @@ menu:
     dePseudonymize: OperationDefinition-DePseudonymize.html
     anonymizeOriginals: OperationDefinition-AnonymizeOriginals.html
     deletePseudonyms: OperationDefinition-DeletePseudonyms.html
+##### Mitgeltend ############################################################
+  Mitgeltende Hinweise: Mitgeltend.html
 
 
 

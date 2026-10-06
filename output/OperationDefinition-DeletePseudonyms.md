@@ -1,4 +1,4 @@
-# deletePseudonyms - v2025.2.0
+# deletePseudonyms - v2026.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "DeletePseudonyms",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms",
-  "version" : "2025.2.0",
+  "version" : "2026.2.0",
   "name" : "DeletePseudonyms",
   "title" : "deletePseudonyms",
   "status" : "active",
@@ -27,6 +27,7 @@
       ]
     }
   ],
+  "description" : "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt.",
   "affectsState" : true,
   "code" : "deletePseudonyms",
   "comment" : "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt.",
