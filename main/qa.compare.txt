@@ -1,27 +1,27 @@
 IGTTPFHIRGatewaygPAS : Validation Results
 =========================================
 
-err = 14, warn = 67, info = 5
+err = 14, warn = 67, info = 8
 $--
 Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.gpas#$-- (canonical = https://ths-greifswald.de/fhir/gpas)
- Build Errors : 0 / 22 / 0
- /workspace/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.gpas : 0 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-AnonymizeOriginals : 2 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-DePseudonymize : 2 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-DeletePseudonyms : 2 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-InsertValuePseudonymPairs : 2 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-Pseudonymize : 2 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeAllowCreate : 2 / 0 / 1
- /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeSecondary : 2 / 0 / 1
+ Build Errors : 1 / 22 / 0
+ /workspace/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.gpas : 0 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-AnonymizeOriginals : 2 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-DePseudonymize : 2 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-DeletePseudonyms : 2 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-InsertValuePseudonymPairs : 2 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-Pseudonymize : 2 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeAllowCreate : 2 / 0 / 2
+ /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeSecondary : 2 / 0 / 2
  /workspace/fsh-generated/resources/Parameters-Parameters-AnonymizeOriginals-request-example-1 : 0 / 0 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-AnonymizeOriginals-response-example-1 : 0 / 4 / 2
+ /workspace/fsh-generated/resources/Parameters-Parameters-AnonymizeOriginals-response-example-1 : 0 / 4 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-DePseudonymize-request-example-1 : 0 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-DePseudonymize-response-example-1 : 0 / 6 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-DePseudonymize-response-example-2 : 0 / 4 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-DeletePseudonyms-request-example-1 : 0 / 0 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-DeletePseudonyms-response-example-1 : 0 / 4 / 2
+ /workspace/fsh-generated/resources/Parameters-Parameters-DeletePseudonyms-response-example-1 : 0 / 4 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-request-example-1 : 0 / 0 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-response-example-1 : 0 / 3 / 2
+ /workspace/fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-response-example-1 : 0 / 3 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-response-example-2 : 0 / 1 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-Pseudonymize-request-example-1 : 0 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-Pseudonymize-response-example-1 : 0 / 6 / 1
@@ -29,7 +29,7 @@ Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.gpas#$-- (canonic
  /workspace/fsh-generated/resources/Parameters-Parameters-PseudonymizeAllowCreate-request-example-1 : 0 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-PseudonymizeAllowCreate-response-example-1 : 0 / 6 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-request-example-1 : 0 / 0 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-response-example-1 : 0 / 6 / 3
+ /workspace/fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-response-example-1 : 0 / 6 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-response-example-2 : 0 / 1 / 1
 </table>
 == n/a ==
@@ -51,37 +51,45 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-PseudonymizeSecondary-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-PseudonymizeSecondary-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-PseudonymizeSecondary-response-example-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Mitgeltend.html#/html/body/div/div/div/div/div/p/img at Line 206, column 4: The image source 'assets/images/gpas_2026.2.0_container_architecture.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.gpas.json ==
+INFORMATION: Resource: The resource ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/OperationDefinition-AnonymizeOriginals.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-AnonymizeOriginals.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/AnonymizeOriginals) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/AnonymizeOriginals could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-AnonymizeOriginals: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/AnonymizeOriginals vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals
 == fsh-generated/resources/OperationDefinition-DePseudonymize.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-DePseudonymize.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/DePseudonymize) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/DePseudonymize could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-DePseudonymize: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/DePseudonymize vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize
 == fsh-generated/resources/OperationDefinition-DeletePseudonyms.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-DeletePseudonyms.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/DeletePseudonyms) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/DeletePseudonyms could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-DeletePseudonyms: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/DeletePseudonyms vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms
 == fsh-generated/resources/OperationDefinition-InsertValuePseudonymPairs.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-InsertValuePseudonymPairs.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/InsertValuePseudonymPairs) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/InsertValuePseudonymPairs could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-InsertValuePseudonymPairs: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/InsertValuePseudonymPairs vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs
 == fsh-generated/resources/OperationDefinition-Pseudonymize.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-Pseudonymize.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/Pseudonymize) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/Pseudonymize could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-Pseudonymize: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/Pseudonymize vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize
 == fsh-generated/resources/OperationDefinition-PseudonymizeAllowCreate.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeAllowCreate.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/PseudonymizeAllowCreate) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/PseudonymizeAllowCreate could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeAllowCreate: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/PseudonymizeAllowCreate vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate
 == fsh-generated/resources/OperationDefinition-PseudonymizeSecondary.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary'): Conformance resource /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeSecondary.json - the canonical URL (https://ths-greifswald.de/fhir/gpas/OperationDefinition/PseudonymizeSecondary) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource OperationDefinition/PseudonymizeSecondary could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /workspace/fsh-generated/resources/OperationDefinition-PseudonymizeSecondary: URL Mismatch https://ths-greifswald.de/fhir/gpas/OperationDefinition/PseudonymizeSecondary vs https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary
 == fsh-generated/resources/Parameters-Parameters-AnonymizeOriginals-request-example-1.json ==
 == fsh-generated/resources/Parameters-Parameters-AnonymizeOriginals-response-example-1.json ==
 WARNING: Parameters/Parameters-AnonymizeOriginals-response-example-1: Parameters.parameter[0].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 WARNING: Parameters/Parameters-AnonymizeOriginals-response-example-1: Parameters.parameter[0].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
-INFORMATION: Parameters/Parameters-AnonymizeOriginals-response-example-1: Parameters.parameter[0].part[2].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/operation-outcome|3.0.0
 WARNING: Parameters/Parameters-AnonymizeOriginals-response-example-1: Parameters.parameter[1].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 WARNING: Parameters/Parameters-AnonymizeOriginals-response-example-1: Parameters.parameter[1].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 == fsh-generated/resources/Parameters-Parameters-DePseudonymize-request-example-1.json ==
@@ -101,7 +109,6 @@ WARNING: Parameters/Parameters-DePseudonymize-response-example-2: Parameters.par
 == fsh-generated/resources/Parameters-Parameters-DeletePseudonyms-response-example-1.json ==
 WARNING: Parameters/Parameters-DeletePseudonyms-response-example-1: Parameters.parameter[0].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 WARNING: Parameters/Parameters-DeletePseudonyms-response-example-1: Parameters.parameter[0].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
-INFORMATION: Parameters/Parameters-DeletePseudonyms-response-example-1: Parameters.parameter[0].part[2].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/operation-outcome|3.0.0
 WARNING: Parameters/Parameters-DeletePseudonyms-response-example-1: Parameters.parameter[1].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 WARNING: Parameters/Parameters-DeletePseudonyms-response-example-1: Parameters.parameter[1].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 == fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-request-example-1.json ==
@@ -109,7 +116,6 @@ WARNING: Parameters/Parameters-DeletePseudonyms-response-example-1: Parameters.p
 WARNING: Parameters/Parameters-InsertValuePseudonymPairs-response-example-1: Parameters.parameter[0].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 WARNING: Parameters/Parameters-InsertValuePseudonymPairs-response-example-1: Parameters.parameter[0].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 WARNING: Parameters/Parameters-InsertValuePseudonymPairs-response-example-1: Parameters.parameter[0].part[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
-INFORMATION: Parameters/Parameters-InsertValuePseudonymPairs-response-example-1: Parameters.parameter[0].part[3].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/operation-outcome|3.0.0
 == fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-response-example-2.json ==
 WARNING: Parameters/Parameters-InsertValuePseudonymPairs-response-example-2: Parameters.parameter[0].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
 == fsh-generated/resources/Parameters-Parameters-Pseudonymize-request-example-1.json ==
@@ -138,10 +144,8 @@ WARNING: Parameters/Parameters-PseudonymizeAllowCreate-response-example-1: Param
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[0].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://sample/psn-system'
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[0].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://sample/psn-system'
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[0].part[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'
-INFORMATION: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[0].part[3].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/operation-outcome|3.0.0
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[1].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://sample/psn-system'
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[1].part[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://sample/psn-system'
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[1].part[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://sample/psn-system'
-INFORMATION: Parameters/Parameters-PseudonymizeSecondary-response-example-1: Parameters.parameter[1].part[3].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/operation-outcome|3.0.0
 == fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-response-example-2.json ==
 WARNING: Parameters/Parameters-PseudonymizeSecondary-response-example-2: Parameters.parameter[0].part[0].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/gpas'

@@ -1,58 +1,56 @@
-[
-  {
-    "id" : "AnonymizeOriginals",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals",
-    "version" : "2025.2.0",
-    "name" : "AnonymizeOriginals"
-  },
-  {
-    "id" : "DePseudonymize",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize",
-    "version" : "2025.2.0",
-    "name" : "DePseudonymize"
-  },
-  {
-    "id" : "DeletePseudonyms",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms",
-    "version" : "2025.2.0",
-    "name" : "DeletePseudonyms"
-  },
-  {
-    "id" : "InsertValuePseudonymPairs",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs",
-    "version" : "2025.2.0",
-    "name" : "InsertValuePseudonymPairs"
-  },
-  {
-    "id" : "Pseudonymize",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize",
-    "version" : "2025.2.0",
-    "name" : "Pseudonymize"
-  },
-  {
-    "id" : "PseudonymizeSecondary",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary",
-    "version" : "2025.2.0",
-    "name" : "PseudonymizeSecondary"
-  },
-  {
-    "id" : "PseudonymizeAllowCreate",
-    "type" : "OperationDefinition",
-    "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate",
-    "version" : "2025.2.0",
-    "name" : "PseudonymizeAllowCreate"
-  },
-  {
-    "id" : "ths-greifswald.ttp-fhir-gw.gpas",
-    "type" : "ImplementationGuide",
-    "url" : "https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas",
-    "version" : "2025.2.0",
-    "name" : "IGTTPFHIRGatewaygPAS"
-  }
-]
+[{
+  "id" : "AnonymizeOriginals",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymizeOriginals",
+  "version" : "2026.2.0",
+  "name" : "AnonymizeOriginals"
+},
+{
+  "id" : "DePseudonymize",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize",
+  "version" : "2026.2.0",
+  "name" : "DePseudonymize"
+},
+{
+  "id" : "DeletePseudonyms",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms",
+  "version" : "2026.2.0",
+  "name" : "DeletePseudonyms"
+},
+{
+  "id" : "InsertValuePseudonymPairs",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs",
+  "version" : "2026.2.0",
+  "name" : "InsertValuePseudonymPairs"
+},
+{
+  "id" : "Pseudonymize",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize",
+  "version" : "2026.2.0",
+  "name" : "Pseudonymize"
+},
+{
+  "id" : "PseudonymizeSecondary",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary",
+  "version" : "2026.2.0",
+  "name" : "PseudonymizeSecondary"
+},
+{
+  "id" : "PseudonymizeAllowCreate",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate",
+  "version" : "2026.2.0",
+  "name" : "PseudonymizeAllowCreate"
+},
+{
+  "id" : "ths-greifswald.ttp-fhir-gw.gpas",
+  "type" : "ImplementationGuide",
+  "url" : "https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas",
+  "version" : "2026.2.0",
+  "name" : "IGTTPFHIRGatewaygPAS"
+}]

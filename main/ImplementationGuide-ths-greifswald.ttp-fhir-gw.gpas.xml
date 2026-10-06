@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gpas</b></p><a name="ths-greifswald.ttp-fhir-gw.gpas"> </a><a name="hcths-greifswald.ttp-fhir-gw.gpas"> </a><h2>IGTTPFHIRGatewaygPAS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas</pre></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/gpas/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gpas"/>
-  <version value="2025.2.0"/>
+  <version value="2026.2.0"/>
   <name value="IGTTPFHIRGatewaygPAS"/>
   <status value="active"/>
-  <date value="2026-02-05T13:54:35+00:00"/>
+  <date value="2026-10-06T13:57:45+00:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.1"/>
+    <version value="7.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -35,7 +35,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -239,7 +239,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -719,6 +719,14 @@
         </extension>
         <nameUrl value="Allgemein.html"/>
         <title value="Allgemein"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Mitgeltend.html"/>
+        </extension>
+        <nameUrl value="Mitgeltend.html"/>
+        <title value="Mitgeltende Hinweise"/>
         <generation value="markdown"/>
       </page>
     </page>

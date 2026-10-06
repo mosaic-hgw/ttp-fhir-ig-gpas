@@ -1,4 +1,15 @@
-# Parameters-PseudonymizeSecondary-response-example-2 - v2025.2.0
+# Parameters-PseudonymizeSecondary-response-example-2 - v2026.2.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Parameters-PseudonymizeSecondary-response-example-2**
+
+## Example Parameters: Parameters-PseudonymizeSecondary-response-example-2
 
 
 
@@ -8,28 +19,24 @@
 {
   "resourceType" : "Parameters",
   "id" : "Parameters-PseudonymizeSecondary-response-example-2",
-  "parameter" : [
+  "parameter" : [{
+    "name" : "error",
+    "part" : [{
+      "name" : "target",
+      "valueIdentifier" : {
+        "system" : "https://ths-greifswald.de/gpas",
+        "value" : "DOMAINXY"
+      }
+    },
     {
-      "name" : "error",
-      "part" : [
-        {
-          "name" : "target",
-          "valueIdentifier" : {
-            "system" : "https://ths-greifswald.de/gpas",
-            "value" : "DOMAINXY"
-          }
-        },
-        {
-          "name" : "error-code",
-          "valueCoding" : {
-            "system" : "http://hl7.org/fhir/issue-type",
-            "code" : "not-found",
-            "display" : "Not Found"
-          }
-        }
-      ]
-    }
-  ]
+      "name" : "error-code",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/issue-type",
+        "code" : "not-found",
+        "display" : "Not Found"
+      }
+    }]
+  }]
 }
 
 ```

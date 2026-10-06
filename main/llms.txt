@@ -1,8 +1,9 @@
-# ths-greifswald.ttp-fhir-gw.gpas#2025.2.0: null
+# ths-greifswald.ttp-fhir-gw.gpas#2026.2.0: null
 
 ## Pages
 
 * [Implementation Guide gPAS](index.md)
+* [Mitgeltende Hinweise](Mitgeltend.md)
 * [Artifacts Summary](artifacts.md)
 * [Allgemein](Allgemein.md)
 
