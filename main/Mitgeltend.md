@@ -47,7 +47,7 @@ Details dazu im offiziellen IG zum [MII PSN Interface](https://medizininformatik
 
 ### Besonderheiten der gPAS MII Implementierung
 
-* Es werden entsprechend dne Vorgaben des MII PSN IGs Bundles mit Parameters-Ressourcen für die Batch-Verarbeitung unterstützt. Zusätzlich können auch einzelne Parameters-Ressourcen (wie bekannt aus der allgemeinen gPAS Umsetzung) in Requests verwendet werden.
+* Es werden entsprechend den Vorgaben des MII PSN IGs Bundles mit Parameters-Ressourcen für die Batch-Verarbeitung unterstützt. Zusätzlich können auch einzelne Parameters-Ressourcen (wie bekannt aus der allgemeinen gPAS Umsetzung) in Requests verwendet werden.
 * Abweichend von der allgemeinen gPAS Umsetzung, werden Pseudonyme, Domänen und Originalwerte nur in Form von Identifiern akzeptiert. Die Verwendung von StringTypes führt zu InvalidRequest. Damit folgt die Umsetzung den Vorgaben des MII PSN IGs.
 
 ### Publikationen und weitergehende Informationen
