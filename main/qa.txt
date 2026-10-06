@@ -3,8 +3,8 @@ IGTTPFHIRGatewaygPAS : Validation Results
 
 err = 14, warn = 67, info = 8
 IG Publisher Version: 2.3.4
-Generated Tue Oct 06 13:58:44 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2026.2.0 (canonical = https://ths-greifswald.de/fhir/gpas)
- Build Errors : 1 / 22 / 0
+Generated Tue Oct 06 14:30:40 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gpas#2026.2.0 (canonical = https://ths-greifswald.de/fhir/gpas)
+ Build Errors : 0 / 22 / 0
  /workspace/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.gpas : 0 / 0 / 2
  /workspace/fsh-generated/resources/OperationDefinition-AnonymizeOriginals : 2 / 0 / 2
  /workspace/fsh-generated/resources/OperationDefinition-DePseudonymize : 2 / 0 / 2
@@ -51,7 +51,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-PseudonymizeSecondary-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-PseudonymizeSecondary-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-PseudonymizeSecondary-response-example-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Mitgeltend.html#/html/body/div/div/div/div/div/p/img at Line 206, column 4: The image source 'assets/images/gpas_2026.2.0_container_architecture.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

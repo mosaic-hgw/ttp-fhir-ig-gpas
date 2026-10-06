@@ -26,13 +26,15 @@ Für gPAS wurde ein zweiter FHIR-Endpunkt im Frühjahr 2026 ergänzt, der diese 
 
 **`http[s]://\<host\>:\<port\>/ttp-fhir/fhir/gpas/v2`**
 
- ![](assets/images/gpas_2026.2.0_container_architecture.png) 
+ ![](assets/images/gpas-architecture.png) 
 
 Der zusätzliche Endpunkt kann individuell per Konfiguration aktiviert/deaktiviert werden (Datei `ttp_fhir.env`; Variable `TTP_FHIR_GPAS_GENERIC_ENDPOINT_ENABLED` mit Default `TRUE`).
 
 ### Übersicht der Funktionalitäten
 
-Es werden alle im IG für die Schnittstelle zur Pseudonymisierung in der MII spezifizierten FHIR Operations unterstützt (Stand vom 01. Oktober 2026). Details dazu im [offiziellen IG des MII PSN Interfaces](http://www.hl7.org/fhir/http.html](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/Funktionen.html).
+Es werden alle im IG für die Schnittstelle zur Pseudonymisierung in der MII spezifizierten FHIR Operations unterstützt (Stand vom 01. Oktober 2026).
+
+Details dazu im offiziellen IG zum [MII PSN Interface](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/Funktionen.html).
 
 | | |
 | :--- | :--- |
